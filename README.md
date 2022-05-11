@@ -9,14 +9,6 @@ The text input by the client is transmitted to the server to synthesize the voic
 MelGAN vocoder is trained on the BZNSYP corpus
 - [MelGAN](https://github.com/seungwonpark/melgan)
 
-## 🍥 Contents
-- [Installation](#installation)
-- [Custom dataset](#custom-dataset)
-- [Training](#training)
-    - [Aligner](#train-aligner-model)
-    - [TTS](#train-tts-model)
-- [Prediction](#prediction)
-
 ## Installation
 
 Make sure you have:
