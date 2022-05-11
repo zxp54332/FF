@@ -12,7 +12,7 @@ BZNSYP vocoder trained with MELGAN
 - Fast: With no autoregression, predictions take a fraction of the time.
 - Controllable: It is possible to control the speed and pitch of the generated utterance.
 
-## 📖 Contents
+## 🍥 Contents
 - [Installation](#installation)
 - [Custom dataset](#custom-dataset)
 - [Training](#training)
