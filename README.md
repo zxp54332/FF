@@ -3,6 +3,8 @@
 </h2>
 
 The text input by the client is transmitted to the server to synthesize the voice and return it.
+
+The server and client are connected by socket and transmit data.
 (https://www.youtube.com/watch?v=kqExk3rd_wQ)
 
 Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the griffin lim method. The program code is for reference only.
