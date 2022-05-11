@@ -15,7 +15,7 @@ Being non-autoregressive, this Transformer model is:
 
 ## 📖 Contents
 - [Installation](#installation)
-- [Custom dataset](#custom dataset)
+- [Custom dataset](#custom-dataset)
 - [Training](#training)
     - [Aligner](#train-aligner-model)
     - [TTS](#train-tts-model)
