@@ -25,7 +25,7 @@ Then install the rest with pip:
 pip install -r requirements.txt
 ```
 ## Custom dataset
-Prepare a folder containing your metadata and wav files, for instance
+Prepare a folder containing your metadata and wav files
 ```
 |- dataset_folder/
 |   |- metadata.csv
