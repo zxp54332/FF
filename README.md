@@ -4,7 +4,7 @@
 
 Tensorflow-2 Implementation of a non-autoregressive Transformer based neural network for Text-to-Speech (TTS). <br>
 
-BZNSYP vocoder trained with MELGAN
+MelGAN vocoder is trained on the BZNSYP corpus
 - [MelGAN](https://github.com/seungwonpark/melgan)
 
 ## 🍥 Contents
