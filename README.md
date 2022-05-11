@@ -97,19 +97,23 @@ You can convert the checkpoint files to hdf5 model weights by running
 python checkpoints_to_weights.py --config config/session_paths.yaml
 ```
 ## Prediction
-### With model weights
-From command line with
-```commandline
-python predict_tts.py -t "Please, say something." -p /path/to/weights/
-```
-Or in a python script
+
+In a python script
 ```python
-from model.models import ForwardTransformer
 from data.audio import Audio
-model = ForwardTransformer.load_model('/path/to/weights/')
+from model.models import ForwardTransformer
+from utils.training_config_manager import TrainingConfigManager
+
 audio = Audio.from_config(model.config)
-out = model.predict('Please, say something.')
+# FF
+FF_model = ForwardTransformer.load_model('/path/to/weights/')
+FF_out = FF_model.predict('Please, say something.')
+
+# AR
+AR_model = config_loader.load_model()
+AR_out = AR_model.predict('Please, say something.')
 
 # Convert spectrogram to wav (with griffin lim)
-wav = audio.reconstruct_waveform(out['mel'].numpy().T)
+FF_wav = audio.reconstruct_waveform(FF_out['mel'].numpy().T)
+AR_wav = audio.reconstruct_waveform(AR_out['mel'].numpy().T)
 ```
