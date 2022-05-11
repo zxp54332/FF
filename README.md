@@ -2,7 +2,7 @@
 <p>Transformer-Based End-to-End Feed-Forward Neural Chinese Speech Synthesis</p>
 </h2>
 
-Tensorflow-2 Implementation of a non-autoregressive Transformer based neural network for Text-to-Speech (TTS). <br>
+Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the griffin lim method. The program code is for reference only. <br>
 
 The text input by the client is transmitted to the server to synthesize the voice and return it.
 
