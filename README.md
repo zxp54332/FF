@@ -7,11 +7,6 @@ Tensorflow-2 Implementation of a non-autoregressive Transformer based neural net
 BZNSYP vocoder trained with MELGAN
 - [MelGAN](https://github.com/seungwonpark/melgan)
 
-#### Feed-Forward Transformer
-- Robust: No repeats and failed for challenging sentences.
-- Fast: predictions take a fraction of the time.
-- Controllable: It is possible to control the speed.
-
 ## 🍥 Contents
 - [Installation](#installation)
 - [Custom dataset](#custom-dataset)
