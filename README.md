@@ -15,18 +15,15 @@ Make sure you have:
 
 * Python >= 3.6
 
-Install espeak as phonemizer backend (for macOS use brew):
+Install espeak as phonemizer backend:
 ```
-sudo apt-get install espeak
+sudo apt-get install espeak-ng
 ```
 
 Then install the rest with pip:
 ```
 pip install -r requirements.txt
 ```
-
-Read the individual scripts for more command line arguments.
-
 
 ## Custom dataset
 Prepare a folder containing your metadata and wav files, for instance
