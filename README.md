@@ -105,11 +105,12 @@ from model.models import ForwardTransformer
 from utils.training_config_manager import TrainingConfigManager
 
 audio = Audio.from_config(model.config)
-# FF
+
+# Feed Forward
 FF_model = ForwardTransformer.load_model('/path/to/weights/')
 FF_out = FF_model.predict('Please, say something.')
 
-# AR
+# Autoregressive
 AR_model = config_loader.load_model()
 AR_out = AR_model.predict('Please, say something.')
 
