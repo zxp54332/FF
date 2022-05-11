@@ -7,8 +7,7 @@ Tensorflow-2 Implementation of a non-autoregressive Transformer based neural net
 BZNSYP vocoder trained with MELGAN
 - [MelGAN](https://github.com/seungwonpark/melgan)
 
-#### Non-Autoregressive
-Being non-autoregressive, this Transformer model is:
+#### Feed-Forward
 - Robust: No repeats and failed attention modes for challenging sentences.
 - Fast: With no autoregression, predictions take a fraction of the time.
 - Controllable: It is possible to control the speed and pitch of the generated utterance.
