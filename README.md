@@ -47,14 +47,14 @@ Change the ```--config``` argument based on the configuration of your choice.
 ```bash
 python create_training_data.py --config config/session_paths.yaml
 ```
-This will populate the training data directory (default `transformer_tts_data.ljspeech`).
+This will populate the training data directory (default `transformer_tts_data.bznsyp`).
 #### Training
 ```bash
 python train_aligner.py --config config/session_paths.yaml
 ```
 ### Train TTS Model
 #### Compute alignment dataset
-First use the aligner model to create the durations dataset
+Use the aligner model to create the durations dataset
 ```bash
 python extract_durations.py --config config/session_paths.yaml
 ```
