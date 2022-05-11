@@ -91,7 +91,6 @@ python train_tts.py --config config/session_paths.yaml
 tensorboard --logdir /logs/directory/
 ```
 
-![Tensorboard Demo](https://raw.githubusercontent.com/as-ideas/TransformerTTS/master/docs/tboard_demo.gif)
 #### Checkpoint to hdf5 weights \[optional\]
 You can convert the checkpoint files to hdf5 model weights by running
 ```bash
