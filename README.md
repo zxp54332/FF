@@ -2,14 +2,12 @@
 <p>Transformer-Based End-to-End Feed-Forward Neural Chinese Speech Synthesis</p>
 </h2>
 
-The text input by the client is transmitted to the server to synthesize the voice and return it.
-
-The server and client are connected by socket and transmit data.
+The text input by the client is sent to the server to synthesize speech and return, and the server and client are connected through socket to transmit data.
 (https://www.youtube.com/watch?v=kqExk3rd_wQ)
 
-Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the griffin lim method. The program code is for reference only.
-
 At present, the problem of synthesizing polyphonic words is encountered, and the International Phonetic Alphabet is used as data, which can only be judged and modified manually during synthesis.
+
+★ Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the griffin lim method. The program code is for reference only.
 
 MelGAN vocoder is trained on the BZNSYP corpus
 - [MelGAN](https://github.com/seungwonpark/melgan)
