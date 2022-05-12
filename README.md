@@ -36,38 +36,38 @@ Prepare a folder containing your metadata and wav files
 |       |- file1.wav
 |       |- ...
 ```
-if `metadata.csv` has the following format
+if `metadata.csv` has the following format you can use the bznsyp preprocessor in `data/metadata_readers.py`, otherwise add your own under the same file.
 ``` wav_file_name|transcription ```
 
 Make sure that:
- -  the metadata reader function name is the same as ```data_name``` field in ```session_paths.yaml```.
- -  the metadata file (can be anything) is specified under ```metadata_path``` in ```session_paths.yaml``` 
+ -  the metadata reader function name is the same as ```data_name``` field in ```training_config.yaml```.
+ -  the metadata file (can be anything) is specified under ```metadata_path``` in ```training_config.yaml``` 
 
 ## Training
 Change the ```--config``` argument based on the configuration of your choice.
 ### Train Aligner Model
 #### Create training dataset
 ```bash
-python create_training_data.py --config config/session_paths.yaml
+python create_training_data.py --config config/training_config.yaml
 ```
 This will populate the training data directory (default `transformer_tts_data.bznsyp`).
 #### Training
 ```bash
-python train_aligner.py --config config/session_paths.yaml
+python train_aligner.py --config config/training_config.yaml
 ```
 ### Train TTS Model
 #### Compute alignment dataset
 Use the aligner model to create the durations dataset
 ```bash
-python extract_durations.py --config config/session_paths.yaml
+python extract_durations.py --config config/training_config.yaml
 ```
 this will add the `durations.<session name>` as well as the char-wise pitch folders to the training data directory.
 #### Training
 ```bash
-python train_tts.py --config config/session_paths.yaml
+python train_tts.py --config config/training_config.yaml
 ```
 #### Training & Model configuration
-- Training and model settings can be configured in `<model>_config.yaml`
+- Training and model settings can be configured in `training_config.yaml`
 
 #### Resume or restart training
 - To resume training simply use the same configuration files
@@ -78,11 +78,6 @@ python train_tts.py --config config/session_paths.yaml
 tensorboard --logdir /logs/directory/
 ```
 
-#### Checkpoint to hdf5 weights \[optional\]
-You can convert the checkpoint files to hdf5 model weights by running
-```bash
-python checkpoints_to_weights.py --config config/session_paths.yaml
-```
 ## Prediction
 
 In a python script
