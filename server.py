@@ -25,7 +25,7 @@ def socket_service(FFT_model, AR_model, vocoder):
     try:
         socket.setdefaulttimeout(20)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        s.bind(('140.125.45.133', 4000))
+        s.bind(('***.***.**.***', 4000))    # Enter your IP
     except ConnectionResetError:
             print("==> ConnectionResetError")
             pass
