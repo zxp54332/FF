@@ -36,8 +36,7 @@ Prepare a folder containing your metadata and wav files
 |       |- file1.wav
 |       |- ...
 ```
-if `metadata.csv` has the following format you can use the bznsyp preprocessor in `data/metadata_readers.py`, otherwise add your own under the same file.
-``` wav_file_name|transcription ```
+if `metadata.csv` has the following format ``` wav_file_name|transcription ```you can use the bznsyp preprocessor in `data/metadata_readers.py`, otherwise add your own under the same file.
 
 Make sure that:
  -  the metadata reader function name is the same as ```data_name``` field in ```training_config.yaml```.
