@@ -7,7 +7,7 @@ The text input by the client is sent to the server to synthesize speech and retu
 
 At present, the problem of synthesizing polyphonic words is encountered, and the International Phonetic Alphabet is used as data, which can only be judged and modified manually during synthesis.
 
-★ Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the griffin lim method. The program code is for reference only.
+★ Because there is a lack of part of the MelGAN vocoder code, it can only be synthesized in the Griffin Lim method. The program code is for reference only.
 
 MelGAN vocoder is trained on the BZNSYP corpus
 - [MelGAN](https://github.com/seungwonpark/melgan)
